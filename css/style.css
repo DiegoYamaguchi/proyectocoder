@@ -42,16 +42,25 @@
     box-sizing: border-box;
 }
 
-html {
+body {
+    display: block;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 
+html {
+    display: flex;
     font-family: 'Regular';
     color: #9e55a1;
     /* Seteo de tamaño de letra */
 
     /* 62.5% = 10px */
-
     font-size: 62.5%;
+    
 }
+
 
 /* Estilos header */
 .encabezado {
