@@ -255,6 +255,94 @@ form {
   fill: #e0cacd;
 }
 
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse2:hover {
+  animation-name: pulse2;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.slideInLeft {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .articulos {
   display: flex;
   justify-content: center;
@@ -269,7 +357,6 @@ form {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  /* flex: 1 1 clamp(400px, 30%, 400px); */
   justify-content: center;
   margin: 3% 3%;
   min-width: 200px;
@@ -277,7 +364,6 @@ form {
 
 .articulo_img {
   width: 30%;
-  height: auto;
   margin: 5%;
   min-width: 280px;
   border: 2px solid #000;
@@ -322,7 +408,6 @@ form {
 
 .index_foto2 {
   border: 2px solid #000;
-  /* borde de color */
   width: 250px;
   height: 300px;
   display: block;
