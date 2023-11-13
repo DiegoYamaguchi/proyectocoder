@@ -1,40 +1,12 @@
-.color1 {
-    color: #9e55a1;
-}
-
-.color2 {
-    color: #a66495;
-}
-
-.color3 {
-    color: #e0cacd;
-}
-
-.color4 {
-    color: #eff4e4;
-}
-
-.color5 {
-    color: #f9f9f4;
-}
-
-/* Paleta de colores */
-
-/* Formatos generales */
-
-/* Fuentes en uso */
 @font-face {
-    font-family: 'Regular';
+    font-family: "Regular";
     src: url(../Fonts/static/Raleway-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Negrita';
+    font-family: "Negrita";
     src: url(../Fonts/static/Raleway-Bold.ttf);
 }
-
-/* Final de fuentes */
-/* reset global sacamos el margin y padding que trae por defecto el navegador */
 
 * {
     margin: 0;
@@ -48,35 +20,41 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background-color: #eff4e4;
 }
 
 html {
     display: flex;
-    font-family: 'Regular';
+    font-family: "Regular";
     color: #9e55a1;
-    /* Seteo de tamaño de letra */
-
     /* 62.5% = 10px */
     font-size: 62.5%;
-    
 }
 
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
 
-/* Estilos header */
+h2 {
+    font-size: 3rem;
+}
+
+hr {
+    margin-inline: 15%;
+}
+
+p {
+    font-size: 2rem;
+}
+
 .encabezado {
     display: flex;
-    /* Se aplica flexbox */
     align-items: center;
-    /* Se alinean los items verticalmente */
     justify-content: center;
-    /* Se alinean los items en horizontal */
     flex-wrap: wrap;
-    /* Se vuelve responsive */
-
     gap: 10rem;
 }
-
-
 
 .logo {
     position: left;
@@ -88,7 +66,6 @@ html {
 
 .logo :hover {
     border-color: 5px solid #000;
-    /* borde de color */
     margin: 0 auto;
     max-width: 200px;
     height: auto;
@@ -100,9 +77,7 @@ html {
     gap: 5rem;
     flex-wrap: wrap;
     padding: 0rem 1.5rem 0rem 1.5rem;
-    /* Para que el index no tenga formato con puntos */
     list-style-type: none;
-
 }
 
 .lista_opciones a {
@@ -112,7 +87,6 @@ html {
     font-weight: 300;
     border-bottom: 2px solid #eff4e4;
     transition: all 0.2s ease;
-
 }
 
 .hamburguesa-img {
@@ -121,8 +95,6 @@ html {
     align-items: center;
     justify-content: center;
 }
-
-
 
 .navbar-toggler {
     position: right;
@@ -136,139 +108,6 @@ html {
     border-color: #a66495;
 }
 
-
-/* Color de fondo de la página */
-body {
-    background-color: #eff4e4;
-}
-
-/* Index */
-
-.articulos {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    padding: 0 1rem;
-}
-
-
-
-.articulo_index1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    /* flex: 1 1 clamp(400px, 30%, 400px); */
-    justify-content: center;
-    margin: 3% 3%;
-    min-width: 200px;
-
-}
-
-
-.articulo_img {
-    width: 30%;
-    height: auto;
-    margin: 5%;
-    min-width: 280px;
-    border: 2px solid #000;
-}
-
-.titulo_parrafo {
-    flex-direction: column;
-    text-align: justify;
-    min-width: 280px;
-    width: 30%;
-}
-
-.linea_vertical {
-    height: 30rem;
-    width: 0.2rem;
-    border-width: 0;
-    color: grey;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.articulos2 {
-    display: flex;
-    max-width: 1200px;
-    flex-direction: row;
-    gap: 3rem;
-
-}
-
-.articulos2 p {
-    margin: 5%;
-}
-
-.articulo_index2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-
-
-}
-
-.articulo_index2 p {
-    text-align: justify;
-    width: auto;
-    justify-items: center;
-}
-
-
-.index_foto1 {
-
-    position: left;
-    margin: 0 auto;
-    max-width: 300px;
-    height: auto;
-    justify-content: center;
-
-}
-
-
-.index_foto2 {
-
-    border: 2px solid #000;
-    /* borde de color */
-    width: 250px;
-    height: 300px;
-    display: block;
-    margin-top: 3rem;
-
-}
-
-h1 {
-    text-align: center;
-    font-size: 4rem;
-
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-hr {
-
-    margin-inline: 15%;
-}
-
-p {
-    font-size: 2rem;
-}
-
-
-
-/* Centrado del footer y tamñano letra copyright */
 footer p {
     text-align: center;
     font-size: 2rem;
@@ -276,18 +115,15 @@ footer p {
 
 footer div ul {
     display: flex;
-    /* Para que el index no tenga formato con puntos */
     list-style-type: none;
     gap: 5px;
     padding: 0 5%;
     flex-direction: column;
-
 }
 
 .div-footer {
     justify-content: right;
 }
-
 
 .redes {
     display: flex;
@@ -322,13 +158,9 @@ i {
     background-color: rgb(37, 211, 102);
 }
 
-
-/* pagina de contacto */
-
 .form-label {
     font-size: 1.5rem;
 }
-
 
 input {
     font-size: 1.5rem;
@@ -339,8 +171,145 @@ textarea {
 }
 
 form {
-   margin: 5%;
-   max-width: 500px;
+    margin: 5%;
+    max-width: 500px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea_vertical {
+    height: 30rem;
+    width: 0.2rem;
+    border-width: 0;
+    color: grey;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-59 {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -0.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-59:focus {
+    color: #171e29;
+}
+
+.button-59:hover {
+    border-color: #e0cacd;
+    color: #e0cacd;
+    fill: #e0cacd;
+}
+
+.button-59:active {
+    border-color: #e0cacd;
+    color: #e0cacd;
+    fill: #e0cacd;
+}
+
+.articulos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.articulo_index1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    /* flex: 1 1 clamp(400px, 30%, 400px); */
+    justify-content: center;
+    margin: 3% 3%;
+    min-width: 200px;
+}
+
+.articulo_img {
+    width: 30%;
+    height: auto;
+    margin: 5%;
+    min-width: 280px;
+    border: 2px solid #000;
+}
+
+.titulo_parrafo {
+    flex-direction: column;
+    text-align: justify;
+    min-width: 280px;
+    width: 30%;
+}
+
+.articulos2 {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.articulos2 p {
+    margin: 5%;
+}
+
+.articulo_index2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo_index2 p {
+    text-align: justify;
+    width: auto;
+    justify-items: center;
+}
+
+.index_foto1 {
+    position: left;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+    justify-content: center;
+}
+
+.index_foto2 {
+    border: 2px solid #000;
+    /* borde de color */
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin-top: 3rem;
 }
 
 .img-contacto {
@@ -351,122 +320,34 @@ form {
     border-radius: 100%;
 }
 
-.formulario {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* CSS */
-.button-59 {
-  align-items: center;
-  background-color: #fff;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  color: #000;
-  cursor: pointer;
-  display: inline-flex;
-  fill: #000;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  height: 48px;
-  justify-content: center;
-  letter-spacing: -.8px;
-  line-height: 24px;
-  min-width: 140px;
-  outline: 0;
-  padding: 0 17px;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-59:focus {
-  color: #171e29;
-}
-
-.button-59:hover {
-  border-color: #e0cacd;
-  color: #e0cacd;
-  fill: #e0cacd;
-}
-
-.button-59:active {
-  border-color: #e0cacd;
-  color: #e0cacd;
-  fill: #e0cacd;
-}
-
-@media (min-width: 768px) {
-  .button-59 {
-    min-width: 170px;
-  }
-}
-
-/* pagina de productos */
-
-
-.productos_japamala {
-    display: flex;
-    max-width: 1200px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.productos_japamala p {
-
-    border: 2px solid #000;
-    max-width: 254px;
-    margin: 3rem 3rem;
-    
-
-}
-
-.img-producto {
-    display: flex;
-    position: center;
-    height: 300px;
-    width: 250px;
-    margin: 0 auto;
-}
-
-
-
-/* nosotros */
 .mision-vision {
     display: flex;
     flex-direction: row;
     margin: 3%;
     text-align: justify;
-  
 }
+
 .img-mision-vision {
     width: 300px;
     height: 400px;
     margin: 3%;
 }
 
-.vision, .mision {
+.vision,
+.mision {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
-
 
 .trabajos {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
+
 .trabajo {
     height: auto;
     width: 200px;
@@ -478,12 +359,28 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
+.productos_japamala {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.productos_japamala p {
+    border: 2px solid #000;
+    max-width: 254px;
+    margin: 3rem 3rem;
+}
 
-/* Pagina Servicios */
+.img-producto {
+    display: flex;
+    position: center;
+    height: 300px;
+    width: 250px;
+    margin: 0 auto;
+}
 
 div article {
     margin-inline: 10%;
@@ -493,12 +390,14 @@ div article p {
     text-align: justify;
 }
 
-
+@media (min-width: 768px) {
+    .button-59 {
+        min-width: 170px;
+    }
+}
 
 @media only screen and (min-width: 571px) and (max-width: 980px) {
-
     .articulo_index1 {
-
         flex-wrap: wrap-reverse;
         gap: 0;
         padding: 0;
@@ -509,7 +408,6 @@ div article p {
         flex-direction: column;
         margin: 0 25%;
         display: block;
-
     }
 
     .articulo_index2 p {
@@ -518,7 +416,6 @@ div article p {
         min-width: 300px;
     }
 
-
     .linea_vertical {
         display: none;
     }
@@ -526,14 +423,16 @@ div article p {
     hr {
         width: auto;
     }
-    .formulario{
+
+    .formulario {
         flex-direction: column;
         flex-direction: column-reverse;
     }
-    
+
     .img-contacto {
         display: none;
     }
+
     .redes {
         display: flex;
         align-items: center;
@@ -542,20 +441,19 @@ div article p {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .mision-vision {
         flex-direction: column;
-       
     }
-
 }
 
 @media only screen and (max-width: 570px) {
     .articulo_index1 {
-
         flex-wrap: wrap-reverse;
         gap: 0;
         padding: 0;
     }
+
     .img-contacto {
         display: none;
     }
@@ -569,15 +467,12 @@ div article p {
         justify-content: center;
         text-align: center;
         margin: 5px 15%;
-
     }
 
     .articulo_index2 p {
         text-align: justify;
         width: 250px;
     }
-
-
 
     .redes {
         display: flex;
@@ -587,17 +482,19 @@ div article p {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .formulario{
+
+    .formulario {
         flex-direction: column;
         flex-direction: column-reverse;
     }
+
     .mision-vision {
         flex-direction: column;
-       
     }
+
     .trabajos {
         flex-direction: column;
-    
     }
-    
 }
+
+/*# sourceMappingURL=style2.css.map */
