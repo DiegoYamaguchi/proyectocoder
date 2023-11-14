@@ -35,8 +35,6 @@
   100%
     transform: scale3d(1, 1, 1)
 
-
-
 .pulse2
   &:hover
     animation-name: pulse2
@@ -53,29 +51,34 @@
   100%
     transform: scale3d(1, 1, 1)
 
-.slideInLeft
-  animation-name: slideInLeft
-  animation-duration: 1s
+.slideInDown
+  opacity: 0
+  animation-name: fadeInUp
+  animation-duration: 2s
   animation-fill-mode: both
 
-@keyframes slideInLeft
+@keyframes fadeInUp
   0%
-    transform: translateX(-100%)
-    visibility: visible
-
+    opacity: 0
+    transform: translateY(-100%)
   100%
-    transform: translateX(0)
+    opacity: 1
+    transform: translateY(0)
 
-.slideInRight
-  animation-name: slideInRight
-  animation-duration: 1s
-  animation-fill-mode: both
 
-@keyframes slideInRight
-  0%
-    transform: translateX(100%)
-    visibility: visible
 
-  100%
-    transform: translateX(0)
+
+
+$animation-duration: 2s
+
+.fade-in
+  opacity: 0
+  animation: fadeIn $animation-duration ease-in-out
+
+  @keyframes fadeIn
+    from
+      opacity: 0
+    to
+      opacity: 1
+  opacity: 1
 
