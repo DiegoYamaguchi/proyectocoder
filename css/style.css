@@ -6,10 +6,17 @@
   font-family: "Negrita";
   src: url(../Fonts/static/Raleway-Bold.ttf);
 }
+/* Additional styling for list items if needed */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+* li {
+  margin: 0;
 }
 
 body {
@@ -43,6 +50,12 @@ hr {
 
 p {
   font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
 }
 
 .encabezado {
@@ -272,6 +285,25 @@ form {
   fill: #e0cacd;
 }
 
+.btn {
+  border: none;
+  color: #fff;
+  padding: 14px 50px;
+  cursor: pointer;
+  border-radius: 100vw;
+}
+
+.primary {
+  background-color: #b75dce;
+  border: 2px solid #b75dce;
+}
+
+.primary:hover {
+  border: 2px solid #b75dce;
+  background: #fff;
+  color: #9f2fbd;
+}
+
 .bounce {
   animation-name: bounce;
   transform-origin: center bottom;
@@ -298,7 +330,7 @@ form {
 }
 .pulse {
   animation-name: pulse;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
 }
 
@@ -475,6 +507,12 @@ form {
     width: 250px;
   }
 }
+.titulo-articulo {
+  display: flex;
+  justify-content: center;
+  align-item: center;
+}
+
 .img-contacto {
   width: 400px;
   height: auto;
@@ -559,16 +597,31 @@ form {
     flex-direction: column;
   }
 }
+.section-productos {
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .productos_japamala {
   display: flex;
   max-width: 1200px;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 
+.productos_japamala {
+  flex-direction: row;
+}
 .productos_japamala p {
-  max-width: 254px;
+  display: flex;
   margin: 3rem 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-producto {
